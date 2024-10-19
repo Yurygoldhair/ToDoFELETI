@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="..\\css\\style.css">
+</head>
+<body class="page">
+    <div class="todo">
+        <div class="todo__logo">FELETI</div>
+        <h1 class="todo__title">Трекер задач на день</h1>
+        <input type="text" id="searchInput" class="todo__search-input" placeholder="Введите поисковой запрос..." onkeyup="searchTasks()">
+        <input type="text" id="taskInput" class="todo__task-input" placeholder="Введите название задачи...">
+        <button class="todo__add-button" onclick="addTask()">Добавить задачу в трекер</button>
+        <div class="todo__columns">
+            <div class="todo__column todo__column--not-completed">
+                <h2 class="todo__column-title">Не выполнено</h2>
+                <ul id="notCompletedList" class="todo__list"></ul>
+            </div>
+            <div class="todo__column todo__column--completed">
+                <h2 class="todo__column-title">Выполнено</h2>
+                <ul id="completedList" class="todo__list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="..\\js\\main.js"></script>
+</body>
+</html>
